@@ -3,19 +3,29 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li, a{
 }
 
 body {
-    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
-.header .navbar {
-  background-color: transparent !important;
+/*seccion home*/
+#home {
+    height: calc(80vh - 80px);
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+#texto-1 {
+  margin-top: 7rem!important;
+  font-size: 22px;
+}
+
+/*seccion tratamientos*/
 .jumbotron{
     width: 100%;
-    height: 250px;
-    background: rgba(0,0,0,0.7);
-    color: #fff;
-    padding-top: 100px;
+    height: 750px;
+    color: #3e2093;
+    padding-top: 200px;
 }
 
 .swiper-container {
@@ -39,25 +49,25 @@ body {
 
 .slide-card {
     background: #fff;
-    box-shadow: 0 8px 30px -7px #c9dff0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     margin: 0 20px;
     padding: 9px 33px;
-    border-radius: 20px;
+    border-radius: 6px;
     border: 0;
     cursor: grab;
 }
 
 .slide-card .slide-card-img-top {
     max-width: 100px;
-    border-radius: 50%;
+    border-radius: 6px;
     margin: 15px auto 0;
-    box-shadow: 0 8px 20px -4px #95abbb;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     width: 100px;
     height: 100px;
 }
 
 .slide-card h5 {
-    color: #01b0f8;
+    color: #3e2093;
     font-size: 21px;
     line-height: 1.3;
 }
@@ -68,3 +78,155 @@ body {
     padding-bottom: 15px;
 }
 
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: 17px;
+    left: auto;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    right: auto;
+    left: 17px;
+}
+
+/*seccion contacto*/
+footer {
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container{
+    width: 85%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container .content .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+  }
+  .content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+  }
+  .content .left-side .details{
+    margin: 14px;
+    text-align: center;
+  }
+  .content .left-side .details i{
+    font-size: 30px;
+    color: #3e2093;
+    margin-bottom: 10px;
+  }
+  .content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .content .left-side .details .text-one,
+  .content .left-side .details .text-two{
+    font-size: 14px;
+    color: #afafb6;
+  }
+  .container .content .right-side{
+    width: 75%;
+    margin-left: 75px;
+  }
+  .content .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e2093;
+  }
+  .right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+  }
+  .right-side .input-box input,
+  .right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+  }
+  .right-side .message-box{
+    min-height: 110px;
+  }
+  .right-side .input-box textarea{
+    padding-top: 6px;
+  }
+  .right-side .button{
+    display: inline-block;
+    margin-top: 12px;
+  }
+  .right-side .button input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #3e2093;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .button input[type="button"]:hover{
+    background: #5029bc;
+  }
+  
+  @media (max-width: 950px) {
+    .container{
+      width: 90%;
+      padding: 30px 40px 40px 35px ;
+    }
+    .container .content .right-side{
+     width: 75%;
+     margin-left: 55px;
+  }
+  }
+  @media (max-width: 820px) {
+    .container{
+      margin: 40px 0;
+      height: 100%;
+    }
+    .container .content{
+      flex-direction: column-reverse;
+    }
+   .container .content .left-side{
+     width: 100%;
+     flex-direction: row;
+     margin-top: 40px;
+     justify-content: center;
+     flex-wrap: wrap;
+   }
+   .container .content .left-side::before{
+     display: none;
+   }
+   .container .content .right-side{
+     width: 100%;
+     margin-left: 0;
+   }
+  }

@@ -32,4 +32,4 @@ const swiper = new Swiper('.swiper-container', {
             spaceBetween: 0
         }
     }
-  });
+  }); 
