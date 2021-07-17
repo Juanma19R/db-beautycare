@@ -1,3 +1,29 @@
+body{
+  font-size: 1.2rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  margin-inline: 60px;
+}
+
+#intro {
+  margin-top: 7rem;
+  background: #FFE9D4;
+}
+
+#image {
+  float: left;
+}
+
+#footer{
+  background: #df2176;
+}
+
+
+
+
+/*
+
 body, h1, h2, h3, h4, h5, h6, p, ul, li, a{
     font-family: 'Playfair Display', serif;
 }
@@ -6,7 +32,8 @@ body {
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
-/*seccion home*/
+
+seccion home
 #home {
     height: calc(80vh - 80px);
     margin-top: 80px;
@@ -20,7 +47,7 @@ body {
   font-size: 22px;
 }
 
-/*seccion tratamientos*/
+seccion tratamientos
 .jumbotron{
     width: 100%;
     height: 750px;
@@ -88,7 +115,7 @@ body {
     left: 17px;
 }
 
-/*seccion contacto*/
+seccion contacto
 footer {
     min-height: 90vh;
     width: 100%;
@@ -229,4 +256,4 @@ footer {
      width: 100%;
      margin-left: 0;
    }
-  }
+  } */
