@@ -1,53 +1,47 @@
-//iniciar scrollspy
-$('body').scrollspy({target: '#menu-navegacion'});
+$(window).on("scroll", function() {
 
-//Scroll suavizado
-$('#menu-navegacion a').on('click', function(event){
-    if(this.hash != ""){
-        event.preventDefault();
+   if ($(".navbar").offset().top > 40) {
+      $(".navbar").addClass("navbar-fixed");
+      $(".go-top").show();
 
-        const hash = this.hash;
+   } else {
+      $(".navbar").removeClass("navbar-fixed");
+      $(".go-top").hide();
 
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 800, function(){
-            window.location.hash = hash;
-        });
-    }
+   }
 })
 
-const swiper = new Swiper('.swiper-container', {
+$(document).ready(function() {
+   var portfolioIsotope = $('.portfolio-container').isotope({
+      itemSelector: '.portfolio-item'
+   });
 
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+   $('#portfolio-filters li').on('click', function() {
+      $("#portfolio-filters li").removeClass('filter-active');
+      $(this).addClass('filter-active');
 
-    autoplay:
-    {
-        delay: 3000,
-    },
-    loop: true,
+      portfolioIsotope.isotope({
+         filter: $(this).data('filter')
+      });
+   });
 
-    //Parametros
-    slidesPerView: 1,
-    spaceBetween: 10,
-    centeredSlides: true,
-    roundLengths: true,
-    loop: true,
-    loopAdditionalSlides: 30,
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 0
-        },
-        480: {
-            slidesPerView: 2,
-            spaceBetween: 0
-        },
-        640: {
-            slidesPerView: 3,
-            spaceBetween: 0
-        }
-    }
-  });
+   $('.popup-image').magnificPopup({
+      type: 'image',
+      closeOnContentClick: true,
+      gallery: {
+         enabled: true,
+         navigateByImgClick: true
+      }
+   });
+
+   $("#navbarNav").on('show.bs.collapse', function() {
+
+      $(".navbar").addClass("navbar-fixed");
+
+      $('a.nav-link, a.btn-custom').click(function() {
+         $("#navbarNav").collapse('hide');
+      });
+   });
+
+
+});

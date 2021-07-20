@@ -1,193 +1,261 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="css/whatsapp.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
 
-    <title>db BeautyCare</title>
+   <title>db BeautyCare</title>
 </head>
 <body>
-
-    <!--Nav-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fondo-nav sticky-top" id="menu-navegacion">
-    <div class="container my-1">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+   <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a href="#tratamientos" class="nav-link">Tratamientos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#intro" class="nav-link">Home</a>
-                </li>              
-                <li class="nav-item">
-                    <a href="#footer" class="nav-link">Contacto</a>
-                </li>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto me-lg-4 py-3">
+               <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#inicio">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#about">Sobre BeautyCare</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Tratamientos</a>
+               </li>
             </ul>
-        </div>
-    </div>
-    </nav>
-
-    <!--Sección intro-->
-    <section id="intro">
-        <div class="container ">
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                      <h1 class="card-title text-center">Maquillaje y estética facial</h1>
-                      <p class="mt-5" id="texto-1">La edad, los agentes externos y los rayos UVA, provocan que la piel envejezca y pierda densidad y firmeza. Es por ello que en nuestro centro de estética te ofrecemos una amplia gama de tratamientos faciales que no requieren cirugía para devolverle la luminosidad a tu rostro manteniéndolo sano.
-                      Verse bien y sentirse aún mejor, es posible.</p>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <img class="img-fluid" src="logo/Logo dbbeautycare.png" alt="dbbeautycare">
-                </div>
-            </div>
-        </div>
-    </section>  
-
-    <!--Tratamientos-->
-    <section id="tratamientos" class="text-center">
-      <div container id="display">
-        <h3 class="display-4"><strong>Nuestros tratamientos</strong></h3>
+            <a class="btn-custom ms-lg-4" href="#contacto">Contacto</a>
+         </div>
       </div>
-        <div class="row mt-5">   
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="slide-container">
-                  <div class="slide-card text-center">
-                    <div class="slide-card-body">
-                      <h4>Microneedling</h4>
-                      <p class="slide-card-text mt-5">Mediante pequeñas micropunciones automáticas con numerosas micro agujas sobre la piel, la epidermis absorbe activos de uso cosméticos como vitaminas, retinol o ácido hialurónico entre otros, consiguiendo tratar diferentes problemas de la piel como arrugas, hiperpigmentación, ojeras, cicatrices, flacidez, etc.
-                      Además de ser un tratamiento muy eficaz para la eliminación de imperfecciones en el rostro y cuello, con el cabezal, la velocidad y la profundidad adecuadas, también es perfecto para trabajar sobre otras zonas del cuerpo con el objetivo de reducir o eliminar estrías, grasa acumulada, piel de naranja, etc.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide-container">
-                  <div class="slide-card text-center">
-                    <div class="slide-card-body">
-                      <h4>Radiofrecuencia</h4>
-                      <p class="slide-card-text mt-5">Este tipo de tratamiento en la zona facial es ideal para conseguir un rejuvenecimiento de la piel, gracias a la transferencia de calor hasta las capas más profundas de la dermis, estimula la producción de colágeno mejorando los tejidos e iluminando el rostro devolviéndole un aspecto saludable.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide-container">
-                  <div class="slide-card text-center">
-                    <div class="slide-card-body">
-                      <h4>Microdermoabrasión</h4>
-                      <p class="slide-card-text mt-5">Este procedimiento poco invasivo es perfecto para realizar limpiezas de cutis, ya que renueva las capas superficiales de la epidermis y elimina las células muertas mediante un peeling mecánico exfoliando suavemente la piel, lo que permitirá la fácil penetración de otros activos que mejoraran el aspecto y salud del rostro.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide-container">
-                  <div class="slide-card text-center">
-                    <div class="slide-card-body">
-                      <h4>Peeling ultrasónico</h4>
-                      <p class="slide-card-text mt-5">Este aparato profesional para tratamientos faciales cuenta con una espátula de acero quirúrgico que mediante la transmisión de ondas hacia la piel destruye las capas más superficiales de esta, reactivando el colágeno en las más profundas.
-                      De esta manera, consigue eliminar impurezas, puntos negros, suciedad y mejorar la elasticidad del rostro reduciendo arrugas y aportándole mayor luminosidad.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide-container">
-                  <div class="slide-card text-center">
-                    <div class="slide-card-body">
-                      <h4>Higiene Facial </h4>
-                      <p class="slide-card-text mt-5">Permite retirar del rostro impurezas y células muertas. La limpieza, exfoliación, extracción, oxigenación y mascarilla, ademas de un buen masaje, activan el riego sanguineo y facilita la penetración de principios activos.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide-container">
-                  <div class="slide-card text-center">
-                    <div class="slide-card-body">
-                      <h4>Tratamientos Faciales Naturales</h4>
-                      <p class="slide-card-text mt-5">Tratamientos mediante la utilización de productos orgánicos para la mejora de la piel, incluyendo mascarillas, masajes, aceites y demás, sin la utilización de productos industriales.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide-container">
-                  <div class="slide-card text-center">
-                    <div class="slide-card-body">
-                      <h4>Otros tratamientos faciales puntuales</h4>
-                      <p class="slide-card-text mt-5"><b>Vitamina C Plus-Iluminador:</b> Tratamiento que permite aportar gran luminosidad y efecto piel tersa e hidratada, consiguiendo unificar el tono. Indicado en piel apagada y fatigada.
-                      <br>
-                      <b>Facial Detox:</b> Tratamiento facial con aceites esenciales que tiene como objetivo la liberación de toxinas, regulando la producción sebácea, equilibrando así la piel grasa, limpia los poros, favorece la transpiración y oxigenación de la piel.
-                      <br> 
-                      <b>Facial Nutritivo:</b> Neutraliza los radicales libres y regenera la vitamina E, lo que nos ayuda a luchar contra el envejecimiento dérmico, Se favorece de forma significativa la mejoría de la elasticidad cutánea.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide-container">
-                  <div class="slide-card text-center">
-                    <div class="slide-card-body">
-                      <h4>Otros tratamientos faciales puntuales</h4>
-                      <p class="slide-card-text mt-5"><b>Antiaging:</b> Repone las vitaminas, antioxidantes y el ácido hialurónico que nuestra piel va gastando conforme avanza el tiempo. Permite eliminar la capa superficial del estrato córneo, al tiempo que aclara las manchas, difumina las líneas de expresión y cierra los poros de la tez.
-                      <br>  
-                      <b>Facial Antiging plus contorno de ojos:</b> Tratamiento facial antiaging donde además se dedica especial atención a la delicada zona del contorno de ojos. Genera flexibilidad, humectación y minimiza los signos del paso del tiempo.Ideal como aporte de nutrición extra para todo tipo de piel.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>      
-    <!--Flechas-->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-      </div>
-     </div>
-    </div>
-    </section>
-    
-    <!--Footer-->
-    <footer>
-        <section id="footer">
-            <div class="container py-3">                                    
-                    <div class="col-sm-12 col-md-4 text-center">
-                        <h3 class="mt-5">Pedí tu turno o consulta!</h3>
-                        <p class="mt-5">
-                            <i class="fab fa-instagram"></i>
-                            <a href="https://www.instagram.com/db_beautycare_/">@db_beautycare_</a>
-                            <br><br>
-                            <i class="fab fa-whatsapp"></i>
-                            +54 2342 50-4081
-                            <br><br> 
-                            <i class="fas fa-envelope"></i>
-                            danielabblanco@outlook.com
-                        </p>
-                    </div>                                  
+   </nav>
+   <header class="wave" id="inicio">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-5 mt-4 ms-md-5 text-center-xs" style="z-index: 1;">
+               <h1 class="fw-normal">Maquillaje y estética facial</h1>
+               <p>La edad, los agentes externos y los rayos UVA, provocan que la piel envejezca y pierda densidad y firmeza. Es por ello que en nuestro centro de estética te ofrecemos una amplia gama de tratamientos faciales que no requieren cirugía para devolverle la luminosidad a tu rostro manteniéndolo sano.
+               Verse bien y sentirse aún mejor, es posible.</p>
+               <a class="btn btn-lg btn-outline-dark" href="#portfolio">Nuestros tratamientos</a>
             </div>
-        </section>
-    </footer>  
+            <div class="col ms-md-5 mt-3 mt-md-0 text-center-xs" style="z-index: 1;">
+               <img class="img-fluid" src="img/Logo dbbeautycare.png" alt="dbbeautycare">
+            </div>
+         </div>
+      </div>
+   </header>
 
-    <!--Script's-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/6507b8b7d8.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+   <!-- seccion nosotros -->
+   <section id="about" class="about">
+      <div class="container">
+         <div class="section-title">
+            <h2>Sobre BeautyCare</h2>
+         </div>
+         <div class="row d-flex justify-content-center">
+            <div class="col-lg-6">
+               <div class="d-flex member">
+                  <div class="pic"><img src="img/cosmetologia-icon-1.png" class="img-fluid" alt="cosmetologa-icon"></div>
+                  <div class="ps-4">
+                     <h4>Cosmetóloga</h4>
+                     <span>Daniela Blanco</span>
+                     <div class="d-flex mt-3">
+                        <a href="https://www.instagram.com/soydblanco/" target="_blank" class="ms-2"><i class="bi bi-instagram"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- seccion Portafolio -->
+   <section id="portfolio" class="portfolio">
+      <div class="container">
+         <div class="section-title">
+            <h2>Tratamientos</h2>
+         </div>
+         <ul id="portfolio-filters" class="text-center d-flex justify-content-center">
+            <li data-filter="*" class="filter-active">Todos</li>
+            <li data-filter=".filter-con">Con aparatología</li>
+            <li data-filter=".filter-sin">Sin aparatología</li>
+         </ul>
+         <div class="row portfolio-container">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-con mb-4">
+               <div class="portfolio-img">
+                  <img src="img/Microneedling-1.png " class="img-fluid ">
+                  <div class="portfolio-info">
+                     <h4>Microneedling</h4>
+
+                     <a href="img/Microneedling-1.png" title="Microneedling" class="preview-link popup-image"><i class="bi bi-plus"></i></a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-con mb-4">
+               <div class="portfolio-img">
+                  <img src="img/Radiofrecuencia-2.png" class="img-fluid">
+                  <div class="portfolio-info">
+                     <h4>Radiofrecuencia</h4>
+
+                     <a href="img/Radiofrecuencia-2.png" title="Radiofrecuencia" class="preview-link popup-image"><i class="bi bi-plus "></i></a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-con mb-4">
+               <div class="portfolio-img">
+                  <img src="img/Microdermoabrasion-3.png" class="img-fluid">
+                  <div class="portfolio-info">
+                     <h4>Microdermoabrasión</h4>
+
+                     <a href="img/Microdermoabrasion-3.png" title="Microdermoabrasion" class="preview-link popup-image"><i class="bi bi-plus"></i></a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-con mb-4">
+               <div class="portfolio-img">
+                  <img src="img/Peeling-ultrasónico-4.png" class="img-fluid">
+                  <div class="portfolio-info">
+                     <h4>Peeling ultrasónico</h4>
+
+                     <a href="img/Peeling-ultrasónico-4.png" title="Peeling-ultrasonico" class="preview-link popup-image"><i class="bi bi-plus "></i></a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-sin mb-4">
+               <div class="portfolio-img">
+                  <img src="img/higiene-facial-5.png" class="img-fluid">
+                  <div class="portfolio-info">
+                     <h4>Higiene facial</h4>
+
+                     <a href="img/higiene-facial-5.png" title="Higiene-facial" class="preview-link popup-image"><i class="bi bi-plus "></i></a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-sin mb-4">
+               <div class="portfolio-img">
+                  <img src="img/tratamientos-faciales-naturales-6.png" class="img-fluid">
+                  <div class="portfolio-info">
+                     <h4>Tratamientos faciales naturales</h4>
+
+                     <a href="img/tratamientos-faciales-naturales-6.png" title="Tratamientos-faciales-naturales" class="preview-link popup-image"><i class="bi bi-plus "></i></a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-sin mb-4">
+               <div class="portfolio-img">
+                  <img src="img/otros-tratamientos-puntuales-7.png" class="img-fluid">
+                  <div class="portfolio-info">
+                     <h4>Otros tratamientos puntuales</h4>
+
+                     <a href="img/otros-tratamientos-puntuales-7.png" title="Otros-tratamientos-puntuales" class="preview-link popup-image"><i class="bi bi-plus "></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- seccion contacto -->
+   <section id="contacto" class="contacto section-bg">
+      <div class=" container ">
+         <div class="section-title">
+            <h2 class="text-white">Contacto</h2>
+         </div>
+         <div class="row ">
+            <div class="col-md-6 ">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d815.8644064887317!2d-60.499851511833384!3d-35.12025190181268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDA3JzEyLjkiUyA2MMKwMjknNTcuNSJX!5e0!3m2!1ses-419!2sar!4v1626734219725!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-md-6 mt-3 mt-md-0 ">
+               <div class="mb-3 ">
+                  <label for="exampleFormControlInput1 " class="form-label text-white">Nombre</label>
+                  <input type="text " class="form-control " id="exampleFormControlInput1 " placeholder="tu nombre ">
+               </div>
+               <div class="mb-3 ">
+                  <label for="exampleFormControlInput1 " class="form-label text-white">Correo electronico</label>
+                  <input type="email " class="form-control " id="exampleFormControlInput1 " placeholder="name@example.com ">
+               </div>
+               <div class="alert alert-warning alerta-correo" role="alert">
+                  Ingresa un correo valido!
+                </div>
+               <div class="mb-3 ">
+                  <label for="exampleFormControlTextarea1 " class="form-label text-white">Mensaje</label>
+                  <textarea class="form-control " id="exampleFormControlTextarea1 " rows="3 "></textarea>
+               </div>
+               <div class="d-grid ">
+                  <a href="#" class="btn btn-primary " role="button" aria-pressed="true" onclick="enviarCorreo();">Enviar</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <footer>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-3">
+               <h4 class="mb-3">Nosotros</h4>
+               <p>
+                  Servicio de estética facial y maquillaje, ubicada en Bragado (Argentina, Prov. BSAS. 6640)
+               </p>
+            </div>
+            <div class="col-md-3">
+               <h4 class="mb-3">Menu</h4>
+               <ul class="list-unstyled">
+                  <li><a href="#about">Sobre BeautyCare</a></li>
+                  <li><a href="#portfolio">Tratamientos</a></li>
+                  <li><a href="#contacto">Contacto</a></li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+               <h4 class="mb-3">Tratamientos</h4>
+               <ul class="list-unstyled">
+                  <li><a href="#portfolio">Estetica facial</a></li>
+                  <li><a href="#portfolio">Maquillaje</a></li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+               <h4 class="mb-3">Redes Sociales</h4>
+               <div class="social">
+                  <a href="https://www.instagram.com/db_beautycare_/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div class="row">
+            <div class="col-12 text-center my-3">
+               Copyrights © 2021 <a href="https://www.instagram.com/juanma_s8/" target="_blank">JuanRuggeri</a> - Todos los derechos reservados
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <a href="#inicio" class="go-top" style="display: none;">
+      <i class="fa fa-angle-double-up text-white" aria-hidden="true"></i>
+   </a>
+   <a href="https://api.whatsapp.com/send?phone=5492342504081&text=Hola!%20Hac%C3%A9%20tu%20consulta%20o%20ped%C3%AD%20tu%20turno." class="float" target="_blank">
+   <i class="fa fa-whatsapp my-float"></i>
+   </a>
+
+   <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js " integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0 " crossorigin="anonymous "></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js " integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=" anonymous "></script>
+   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js "></script>
+   <script src="js/jquery.magnific-popup.min.js "></script>
+   <script src="https://kit.fontawesome.com/6507b8b7d8.js" crossorigin="anonymous"></script>
+   <script src="js/script.js "></script>
+   <script src="js/funciones.js "></script>
 </body>
 </html>
