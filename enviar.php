@@ -1,10 +1,10 @@
 <?php
     if (isset($_POST['correo']) && isset($_POST['mensaje'])) {
         $correo = $_POST['correo'];
-        $mensaje = $_POST['mensaje']
+        $mensaje = $_POST['mensaje'];
 
         $from = $correo;
-        $to = "info@dbbeautycare.com";
+        $to = "juan.ruggeri@hotmail.com";
 		$subject = "Nuevo mensaje de ". $correo;
 		$message = $mensaje;
 		$headers = "From:" . $from;
