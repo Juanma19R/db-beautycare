@@ -4,7 +4,7 @@
         $mensaje = $_POST['mensaje'];
 
         $from = $correo;
-        $to = "juan.ruggeri@hotmail.com";
+        $to = "info@dbbeautycare.com";
 		$subject = "Nuevo mensaje de ". $correo;
 		$message = $mensaje;
 		$headers = "From:" . $from;
