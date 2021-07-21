@@ -89,9 +89,7 @@ section {
    transition: all 0.6s;
 }
 
-
 /* about */
-
 .about .member {
    padding: 30px;
    border-radius: 5px;
@@ -146,7 +144,6 @@ section {
 }
 
 /* portfolio */
-
 .portfolio #portfolio-filters li {
    cursor: pointer;
    list-style: none;
@@ -223,7 +220,6 @@ section {
    color: #000;
 }
 
-
 /* contacto */
 iframe {
    max-width: 100%;
@@ -233,9 +229,7 @@ iframe {
    display: none;
 }
 
-
 /* footer */
-
 footer {
    border-top: 1px solid #7e7e7e;
    padding-top: 44px;
@@ -277,9 +271,7 @@ footer .social a {
    z-index: 1000;
 }
 
-
 /* ultimos ajustes */
-
 .navbar-toggler {
    padding: .10rem .45rem;
    border: 1px solid white;
